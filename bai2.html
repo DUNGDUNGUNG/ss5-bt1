@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("nhập số vô đây: ");
+    let x=[];
+    for (let i = 0; i < num.length; i++) {
+        if (num[i] % 2 === 0 && num[i + 1] % 2 === 0) {
+            x.push(num[i],'-')
+        }
+        else x.push(num[i]);
+    }
+    document.write(x.join(" "));
+</script>
+</body>
+</html>

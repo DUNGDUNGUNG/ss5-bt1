@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str= 'a';
+    let c = 'ZXCVBNMASDFGHJKLQWERTYUIOP';
+    let d = 'zxcvbnmasdfghjklqwertyuiop';
+    let m=[];
+    let x=0;
+    for (x=0;x<str.length;x++){
+        if(c.indexOf(str[x]) !== -1){
+            m.push(str[x].toLowerCase());
+        }
+        else if(d.indexOf(str[x]) !== -1){
+            m.push((str[x].toUpperCase()));
+            }
+        else m.push(str[x]);
+    }
+    document.write(m)
+</script>
+</body>
+</html>
